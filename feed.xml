@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>新闻联播文字稿</title>
+        <link>https://github.com/ALLCAPS-Droid/xin-wen-lian-bo/</link>
+        <description>每日新闻联播文字稿自动更新 RSS</description>
+        <lastBuildDate>Tue, 21 Jul 2026 08:30:05 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>zh-CN</language>
+        <image>
+            <title>新闻联播文字稿</title>
+            <url>https://gh-proxy.org/https://raw.githubusercontent.com/ALLCAPS-Droid/xin-wen-lian-bo/refs/heads/master/logo.png</url>
+            <link>https://github.com/ALLCAPS-Droid/xin-wen-lian-bo/</link>
+        </image>
+        <item>
+            <title><![CDATA[2026年07月21日 新闻联播文字稿]]></title>
+            <link>https://github.com/ALLCAPS-Droid/xin-wen-lian-bo/blob/master/news/20260721.md</link>
+            <guid isPermaLink="false">20260721.md</guid>
+            <pubDate>Tue, 21 Jul 2026 13:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>﻿# 《新闻联播》 (20260721)</p>
+<h2>新闻摘要</h2>
+<p>今日节目主要内容如下。</p>
+<h2>详细新闻</h2>
+<h3>国内新闻</h3>
+<p>这里是国内新闻的详细内容。</p>
+<h3>国际新闻</h3>
+<p>这里是国际新闻的详细内容。</p>
+<hr>
+<p>(更新时间戳: 1721548800000)</p>
+]]></content:encoded>
+            <author>CCTV</author>
+        </item>
+    </channel>
+</rss>

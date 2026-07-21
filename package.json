@@ -1,0 +1,20 @@
+﻿{
+  "name": "xin-wen-lian-bo",
+  "version": "1.0.0",
+  "description": "新闻联播",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "index": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "feed": "^5.2.1",
+    "jsdom": "^20.0.0",
+    "marked": "^17.0.6",
+    "node-fetch": "^3.2.10"
+  }
+}
+

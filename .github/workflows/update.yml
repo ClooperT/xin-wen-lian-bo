@@ -1,0 +1,45 @@
+﻿name: Update today xin wen lian bo
+
+on:
+  workflow_dispatch:
+
+jobs:
+  update:
+    name: Update today xin wen lian bo
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          
+      - run: npm install
+      - run: npm run index
+
+      # ================= 新增：生成 RSS 订阅源 (可选) =================
+      - name: Generate RSS Feed
+        run: |
+          npm install feed marked
+          node build_rss.js || echo "RSS 生成失败或未配置，跳过"
+
+      # ================= 飞书机器人推送 =================
+      - name: Send to Feishu Bot
+        env:
+          FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
+        run: node feishu_sender.js || true
+
+      # ================= 保存并推送所有变更到 GitHub =================
+      - name: Commit and Push changes
+        run: |
+          git config --local user.email "github-actions[bot]@github.com"
+          git config --local user.name "github-actions[bot]"
+          git add .
+          git commit -m "AUTO UPDATE [bot]" || true
+          
+      - name: Push master changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: master
+
