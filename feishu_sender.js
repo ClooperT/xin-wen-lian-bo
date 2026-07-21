@@ -66,20 +66,16 @@ function buildMessage(date, abstract, titles, links) {
   
   content.push([{ tag: 'text', text: '' }]);
   content.push([{ tag: 'text', text: '📰 今日新闻（共' + titles.length + '则）' }]);
+  content.push([{ tag: 'text', text: '  — 点击标题跳转央视网查看原文' }]);
   
-  // Each news item: title text + clickable link
+  // Each news title is a clickable link directly to CCTV
   for (let i = 0; i < titles.length; i++) {
     const t = titles[i];
     const link = links[i] || '';
-    // Truncate long titles
-    const shortTitle = t.length > 35 ? t.substring(0, 35) + '...' : t;
     if (link) {
-      content.push([
-        { tag: 'text', text: '• ' + shortTitle + '  ' },
-        { tag: 'a', text: '查看原文→', href: link }
-      ]);
+      content.push([{ tag: 'a', text: '• ' + t, href: link }]);
     } else {
-      content.push([{ tag: 'text', text: '• ' + shortTitle }]);
+      content.push([{ tag: 'text', text: '• ' + t }]);
     }
   }
   

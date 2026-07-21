@@ -1,6 +1,9 @@
 ﻿name: Update today xin wen lian bo
 
 on:
+  schedule:
+    - cron: '35 11 * * *'
+    - cron: '0 12 * * *'
   workflow_dispatch:
 
 jobs:
@@ -15,9 +18,29 @@ jobs:
           node-version: 20
           
       - run: npm install
-      - run: npm run index
 
-      # ================= 新增：生成 RSS 订阅源 (可选) =================
+      # ================= 爬虫重试逻辑 =================
+      - name: Run crawler with retry until 20:00
+        run: |
+          END_TIME=$(date -d "20:00" +%s 2>/dev/null || date -j -f "%H:%M" "20:00" +%s)
+          END_TIME=${END_TIME:-$(date -d "20:00" +%s)}
+          while true; do
+            npm run index
+            TODAY=$(TZ='Asia/Shanghai' date +'%Y%m%d')
+            if [ -f "news/${TODAY}.md" ]; then
+              echo "✅ 新闻文件已生成"
+              break
+            fi
+            NOW=$(date +%s)
+            if [ "$NOW" -ge "$END_TIME" ]; then
+              echo "⏰ 已超过20:00，停止重试"
+              break
+            fi
+            echo "⏳ 新闻尚未生成，等待10分钟后重试..."
+            sleep 600
+          done
+
+      # ================= 生成 RSS 订阅源 =================
       - name: Generate RSS Feed
         run: |
           npm install feed marked
@@ -29,7 +52,7 @@ jobs:
           FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
         run: node feishu_sender.js || true
 
-      # ================= 保存并推送所有变更到 GitHub =================
+      # ================= 保存并推送 =================
       - name: Commit and Push changes
         run: |
           git config --local user.email "github-actions[bot]@github.com"
