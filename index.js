@@ -1,4 +1,4 @@
-﻿import fetch from './fetch.js';
+import fetch from './fetch.js';
 import jsdom from 'jsdom';
 const { JSDOM } = jsdom;
 import fs from 'fs';
@@ -95,11 +95,23 @@ const getNewsList = async date => {
 const getAbstract = async link => {
 	const HTML = await fetch(link);
 	const dom = new JSDOM(HTML);
-	const abstract = dom.window.document.querySelector(
-		'#page_body > div.allcontent > div.video18847 > div.playingCon > div.nrjianjie_shadow > div > ul > li:nth-child(1) > p'
-	).innerHTML.replaceAll('；', "；\n\n").replaceAll('：', "：\n\n");
-	console.log('成功获取新闻简介');
-	return abstract;
+	var abstract = '';
+	// Try multiple selectors to find the abstract
+	const el = dom.window.document.querySelector('.nrjianjie_shadow .con ul li p');
+	if (el && el.innerHTML.trim()) {
+		abstract = el.innerHTML.replaceAll('；', "；\n\n").replaceAll('：', "：\n\n");
+		console.log('成功获取新闻简介');
+		return abstract;
+	}
+	// Fallback: use meta description or title
+	const meta = dom.window.document.querySelector('meta[name="description"]');
+	if (meta && meta.getAttribute('content') && meta.getAttribute('content').length > 5) {
+		console.log('使用meta描述作为新闻简介');
+		return meta.getAttribute('content');
+	}
+	// Last fallback
+	console.log('未找到新闻简介，使用占位内容');
+	return '本期节目主要内容。';
 }
 
 /**
@@ -116,9 +128,17 @@ const getNews = async links => {
 		const url = links[i];
 		const html = await fetch(url);
 		const dom = new JSDOM(html);
-		const title = dom.window.document.querySelector('#page_body > div.allcontent > div.video18847 > div.playingVideo > div.tit')?.innerHTML?.replace('[视频]', '');
-		const content = dom.window.document.querySelector('#content_area')?.innerHTML;
-		news.push({ title, content });
+		// Try to find title: simpler selectors
+		var title = dom.window.document.querySelector('.tit')?.innerHTML?.replace('[视频]', '')?.trim();
+		if (!title) {
+			title = dom.window.document.querySelector('.ph_title_l')?.innerHTML?.replace('[视频]', '')?.trim();
+		}
+		if (!title) {
+			title = dom.window.document.querySelector('title')?.innerHTML?.trim();
+		}
+		// Try to find content from content_area
+		var content = dom.window.document.querySelector('#content_area')?.innerHTML || '';
+		news.push({ title: title || '新闻', content });
 		console.count('获取的新闻则数');
 	}
 	console.log('成功获取所有新闻');
@@ -136,6 +156,7 @@ const newsToMarkdown = ({ date, abstract, news, links }) => {
 	const newsLength = news.length;
 	for (let i = 0; i < newsLength; i++) {
 		const { title, content } = news[i];
+		if (!content) continue;
 		const link = links[i];
 		mdNews += `### ${title}\n\n${content}\n\n[查看原文](${link})\n\n`;
 	}
@@ -151,7 +172,7 @@ const updateCatalogue = async ({ catalogueJsonPath, readmeMdPath, date, abstract
 	// 更新 catalogue.json
 	await readFile(catalogueJsonPath).then(async data => {
 		data = data.toString();
-		let catalogueJson = JSON.parse(data || '[]');
+		let catalogueJson = JSON.parse((data || '[]').replace(/^\uFEFF/, ''));
 		catalogueJson.unshift({
 			date,
 			abstract,
