@@ -25,7 +25,7 @@ jobs:
           END_TIME=$(date -d "20:00" +%s 2>/dev/null || date -j -f "%H:%M" "20:00" +%s)
           END_TIME=${END_TIME:-$(date -d "20:00" +%s)}
           while true; do
-            npm run index
+            npm run index || true
             TODAY=$(TZ='Asia/Shanghai' date +'%Y%m%d')
             if [ -f "news/${TODAY}.md" ]; then
               echo "✅ 新闻文件已生成"
