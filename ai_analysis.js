@@ -21,10 +21,12 @@ function cleanMarkdown(text) {
 }
 
 function splitAnalysis(text) {
-  const sixthIdx = text.indexOf('第六步');
-  if (sixthIdx > 0 && sixthIdx < text.length / 2) {
-    return { part1: text.substring(0, sixthIdx).trim(), part2: text.substring(sixthIdx).trim() };
+  const marker = '=====交易参考与风险=====';
+  const idx = text.indexOf(marker);
+  if (idx > 0) {
+    return { part1: text.substring(0, idx).trim(), part2: text.substring(idx + marker.length).trim() };
   }
+  // Fallback: split at middle
   const mid = Math.floor(text.length / 2);
   const splitAt = text.indexOf('\n', mid);
   return { part1: text.substring(0, splitAt > 0 ? splitAt : mid).trim(), part2: text.substring(splitAt > 0 ? splitAt : mid).trim() };
@@ -123,7 +125,7 @@ async function main() {
   const resp = await fetch('https://api.deepseek.com/v1/chat/completions', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + DEEPSEEK_KEY },
-    body: JSON.stringify({ model: 'deepseek-chat', messages: [{ role: 'system', content: SYSTEM_PROMPT }, { role: 'user', content: input }], temperature: 0.3, max_tokens: 2500 })
+    body: JSON.stringify({ model: 'deepseek-chat', messages: [{ role: 'system', content: SYSTEM_PROMPT }, { role: 'user', content: input }], temperature: 0.3, max_tokens: 5000 })
   });
   if (!resp.ok) { const err = await resp.text(); throw new Error('DeepSeek API error: ' + resp.status); }
   const data = await resp.json();
