@@ -1,9 +1,6 @@
-﻿name: Update today xin wen lian bo
+name: Update today xin wen lian bo
 
 on:
-  schedule:
-    - cron: '35 11 * * *'
-    - cron: '0 12 * * *'
   workflow_dispatch:
 
 jobs:
@@ -12,14 +9,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      
+
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          
+
       - run: npm install
 
-      # ================= 爬虫重试逻辑 =================
       - name: Run crawler with retry until 20:00
         run: |
           END_TIME=$(date -d "20:00" +%s 2>/dev/null || date -j -f "%H:%M" "20:00" +%s)
@@ -28,38 +24,41 @@ jobs:
             npm run index || true
             TODAY=$(TZ='Asia/Shanghai' date +'%Y%m%d')
             if [ -f "news/${TODAY}.md" ]; then
-              echo "✅ 新闻文件已生成"
+              echo "新闻文件已生成"
               break
             fi
             NOW=$(date +%s)
             if [ "$NOW" -ge "$END_TIME" ]; then
-              echo "⏰ 已超过20:00，停止重试"
+              echo "已超过20:00，停止重试"
               break
             fi
-            echo "⏳ 新闻尚未生成，等待10分钟后重试..."
+            echo "新闻尚未生成，等待10分钟后重试..."
             sleep 600
           done
 
-      # ================= 生成 RSS 订阅源 =================
       - name: Generate RSS Feed
         run: |
           npm install feed marked
           node build_rss.js || echo "RSS 生成失败或未配置，跳过"
 
-      # ================= 飞书机器人推送 =================
       - name: Send to Feishu Bot
         env:
           FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
         run: node feishu_sender.js || true
 
-      # ================= 保存并推送 =================
+      - name: Send AI Industry Analysis
+        env:
+          FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+        run: node ai_analysis.js || true
+
       - name: Commit and Push changes
         run: |
           git config --local user.email "github-actions[bot]@github.com"
           git config --local user.name "github-actions[bot]"
           git add .
           git commit -m "AUTO UPDATE [bot]" || true
-          
+
       - name: Push master changes
         uses: ad-m/github-push-action@master
         with:
