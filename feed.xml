@@ -4,7 +4,7 @@
         <title>新闻联播文字稿</title>
         <link>https://github.com/ALLCAPS-Droid/xin-wen-lian-bo/</link>
         <description>每日新闻联播文字稿自动更新 RSS</description>
-        <lastBuildDate>Sun, 26 Jul 2026 11:45:42 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 27 Jul 2026 11:45:32 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-CN</language>
@@ -13,6 +13,28 @@
             <url>https://gh-proxy.org/https://raw.githubusercontent.com/ALLCAPS-Droid/xin-wen-lian-bo/refs/heads/master/logo.png</url>
             <link>https://github.com/ALLCAPS-Droid/xin-wen-lian-bo/</link>
         </image>
+        <item>
+            <title><![CDATA[2026年07月27日 新闻联播文字稿]]></title>
+            <link>https://github.com/ALLCAPS-Droid/xin-wen-lian-bo/blob/master/news/20260727.md</link>
+            <guid isPermaLink="false">20260727.md</guid>
+            <pubDate>Mon, 27 Jul 2026 13:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>《新闻联播》 (20260727)</h1>
+<h2>新闻摘要</h2>
+<p>习近平同巴西总统通电话</p>
+<h2>详细新闻</h2>
+<h3>上半年全国规模以上工业企业利润实现较快增长</h3>
+<p><strong>央视网消息</strong>（新闻联播）：国家统计局今天（7月27日）发布的数据显示，上半年，全国规模以上工业企业实现利润总额39479.9亿元，同比增长18.7%，较一季度加快3.2个百分点。我国工业生产稳中有进，工业企业利润实现较快增长。</p><p>在算力需求大幅增长的带动下，上半年，电子行业利润同比增长96.9%，拉动全部规模以上工业企业利润增长8.5个百分点。其中，与服务器有关的计算机整机制造、计算机外围设备制造行业利润均实现大幅增长。</p><p>原材料制造业利润在上半年也实现了快速增长。在铜、铝等有色金属产品需求向好等因素推动下，今年上半年，有色行业利润增长99.4%，拉动全部规模以上工业企业利润增长4.7个百分点。</p>
+
+<p><a href="https://tv.cctv.com/2026/07/27/VIDEef7JEnavvXRBbdUcMKOy260727.shtml">查看原文</a></p>
+<h3>【“十五五”开好局起好步】推动残疾人事业全面发展高质量发展</h3>
+<p><strong>央视网消息</strong>（新闻联播）：国务院新闻办公室今天（7月27日）举行“开局起步‘十五五’”系列主题新闻发布会。中国残联相关负责人介绍了“十五五”时期推进残疾人事业全面发展高质量发展有关情况。</p><p>“十五五”时期是基本实现社会主义现代化夯实基础、全面发力的关键时期，也是残疾人事业加快补上短板，推进全面发展、高质量发展的重要时期。发布会上，中国残联负责人介绍，《残疾人保障和发展“十五五”规划》提出了9项主要指标、7个方面32项重点任务、45项重点服务项目和专项行动。</p><p>“十五五”期间，我国将开展孤独症全生命周期关爱促进行动，持续深化无障碍环境共建共享，着力提升残疾人康复、教育、就业质量。同时，加快助残科技成果场景转化，不断完善残疾人社会保障和关爱服务体系，让残疾人民生保障更稳定、助残服务更有温度。</p>
+
+<p><a href="https://tv.cctv.com/2026/07/27/VIDEy0OWhdJUYvN8yVw8315b260727.shtml">查看原文</a></p>
+<hr>
+<p>(更新时间戳: 1785152731678)</p>
+]]></content:encoded>
+            <author>CCTV</author>
+        </item>
         <item>
             <title><![CDATA[2026年07月26日 新闻联播文字稿]]></title>
             <link>https://github.com/ALLCAPS-Droid/xin-wen-lian-bo/blob/master/news/20260726.md</link>
