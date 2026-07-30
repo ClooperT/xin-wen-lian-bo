@@ -4,7 +4,7 @@
         <title>新闻联播文字稿</title>
         <link>https://github.com/ALLCAPS-Droid/xin-wen-lian-bo/</link>
         <description>每日新闻联播文字稿自动更新 RSS</description>
-        <lastBuildDate>Wed, 29 Jul 2026 11:45:36 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 30 Jul 2026 11:45:36 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-CN</language>
@@ -13,6 +13,20 @@
             <url>https://gh-proxy.org/https://raw.githubusercontent.com/ALLCAPS-Droid/xin-wen-lian-bo/refs/heads/master/logo.png</url>
             <link>https://github.com/ALLCAPS-Droid/xin-wen-lian-bo/</link>
         </image>
+        <item>
+            <title><![CDATA[2026年07月30日 新闻联播文字稿]]></title>
+            <link>https://github.com/ALLCAPS-Droid/xin-wen-lian-bo/blob/master/news/20260730.md</link>
+            <guid isPermaLink="false">20260730.md</guid>
+            <pubDate>Thu, 30 Jul 2026 13:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>《新闻联播》 (20260730)</h1>
+<h2>新闻摘要</h2>
+<p>[视频]中共中央政治局召开会议 决定召开二十届五中全会 分析研究当前经济形势和经济工作 中共中央总书记习近平主持会议</p>
+<h2>详细新闻</h2>
+<hr>
+<p>(更新时间戳: 1785411935880)</p>
+]]></content:encoded>
+            <author>CCTV</author>
+        </item>
         <item>
             <title><![CDATA[2026年07月29日 新闻联播文字稿]]></title>
             <link>https://github.com/ALLCAPS-Droid/xin-wen-lian-bo/blob/master/news/20260729.md</link>
