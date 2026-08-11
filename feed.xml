@@ -4,7 +4,7 @@
         <title>新闻联播文字稿</title>
         <link>https://github.com/ALLCAPS-Droid/xin-wen-lian-bo/</link>
         <description>每日新闻联播文字稿自动更新 RSS</description>
-        <lastBuildDate>Mon, 10 Aug 2026 11:45:42 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 11 Aug 2026 11:45:32 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-CN</language>
@@ -13,6 +13,28 @@
             <url>https://gh-proxy.org/https://raw.githubusercontent.com/ALLCAPS-Droid/xin-wen-lian-bo/refs/heads/master/logo.png</url>
             <link>https://github.com/ALLCAPS-Droid/xin-wen-lian-bo/</link>
         </image>
+        <item>
+            <title><![CDATA[2026年08月11日 新闻联播文字稿]]></title>
+            <link>https://github.com/ALLCAPS-Droid/xin-wen-lian-bo/blob/master/news/20260811.md</link>
+            <guid isPermaLink="false">20260811.md</guid>
+            <pubDate>Tue, 11 Aug 2026 13:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>《新闻联播》 (20260811)</h1>
+<h2>新闻摘要</h2>
+<p>[视频]习近平就哥伦比亚发生强烈地震向哥伦比亚总统致慰问电</p>
+<h2>详细新闻</h2>
+<h3>各地抢抓农时做好田间管理</h3>
+<p><strong>央视网消息</strong>（新闻联播）：眼下，各地抢抓农时，分类施策、科学有序做好田间管护工作，夯实粮食丰收基础。</p><p>东北地区水稻相继进入抽穗扬花期。黑龙江省各水稻种植区通过航化作业、监测预警等方式，构建严密的病虫害防控体系。在北大荒集团二九〇农场，今年上新了24小时在线的田间智能监测设备，每4小时自动将水稻生长数据生成一份“电子植保配方”，为水稻量身定制养分供给，增强抗病虫害能力。</p><p>吉林省多地持续出现大范围高温湿热天气。在大安市盐碱地改良水稻种植基地，种植户通过错峰作业、科学管护，全力降低高温热害损失。今年，吉林全省绿色防控、统防统治总规模达240万亩，农作物抗高温能力显著增强。</p><p>各地玉米进入灌浆期，也是病虫害防控的关键期。今年，河北玉米种植面积3600多万亩，面对近期降水偏多易发病虫害的情况，全省大力推广水肥一体化等科技手段，精准开展追肥、化学防控和病虫害防治，多措并举提单产、保丰收。今年，陕西玉米种植面积1900万亩左右，在榆林，当地全面开展植保无人机“一喷多促”飞防作业，植保无人机一次作业即可实现防病防虫和促灌浆增产的双重效果，保障玉米产量不断提升。</p><p>西南地区水稻陆续进入收割期。四川达州280多万亩水稻开镰收割，为抢抓农时，当地今年搭建了跨区作业农机调配平台，调集2300余台（套）农机，组织农机服务队深入田间，打通生产服务“最后一公里”，确保成熟一块、收割一块。贵州赤水宝源梯田水稻迎来丰收，当地通过生态化、精细化种植，让品质更稳定，产量也增加。</p>
+
+<p><a href="https://tv.cctv.com/2026/08/11/VIDENZCoyuG1BQehHbcy8JbY260811.shtml">查看原文</a></p>
+<h3>我国将加快打造现代煤炭产业体系</h3>
+<p><strong>央视网消息</strong>（新闻联播）：国家发展改革委、国家能源局昨天（8月10日）联合发布的《煤炭工业发展“十五五”规划》提出，“十五五”时期，我国将进一步优化煤炭开发布局，持续推进煤炭供应保障基地建设，完善煤炭跨区调运格局。同时要提高煤炭资源开发准入标准，积极发展优质先进产能，推动落后无效产能退出，加强煤炭清洁高效开发利用，强化煤炭安全生产管理，推动煤炭消费顺利达峰。</p><p>到2030年，煤炭兜底保障能力进一步增强，优质先进产能比重进一步提升，全国大型现代化煤矿产能比重提升到87%，智能化煤矿产能比例提升到75%，煤层气产量达到260亿立方米，现代煤炭产业体系基本建成。</p>
+
+<p><a href="https://tv.cctv.com/2026/08/11/VIDEKRWmdJllGmb4QWECxquf260811.shtml">查看原文</a></p>
+<hr>
+<p>(更新时间戳: 1786448732253)</p>
+]]></content:encoded>
+            <author>CCTV</author>
+        </item>
         <item>
             <title><![CDATA[2026年08月10日 新闻联播文字稿]]></title>
             <link>https://github.com/ALLCAPS-Droid/xin-wen-lian-bo/blob/master/news/20260810.md</link>
@@ -322,28 +344,6 @@
 <p><a href="https://tv.cctv.com/2026/07/28/VIDEg7Y8XJ8NRa2SUkP2g4W5260728.shtml">查看原文</a></p>
 <hr>
 <p>(更新时间戳: 1785239138828)</p>
-]]></content:encoded>
-            <author>CCTV</author>
-        </item>
-        <item>
-            <title><![CDATA[2026年07月27日 新闻联播文字稿]]></title>
-            <link>https://github.com/ALLCAPS-Droid/xin-wen-lian-bo/blob/master/news/20260727.md</link>
-            <guid isPermaLink="false">20260727.md</guid>
-            <pubDate>Mon, 27 Jul 2026 13:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h1>《新闻联播》 (20260727)</h1>
-<h2>新闻摘要</h2>
-<p>习近平同巴西总统通电话</p>
-<h2>详细新闻</h2>
-<h3>上半年全国规模以上工业企业利润实现较快增长</h3>
-<p><strong>央视网消息</strong>（新闻联播）：国家统计局今天（7月27日）发布的数据显示，上半年，全国规模以上工业企业实现利润总额39479.9亿元，同比增长18.7%，较一季度加快3.2个百分点。我国工业生产稳中有进，工业企业利润实现较快增长。</p><p>在算力需求大幅增长的带动下，上半年，电子行业利润同比增长96.9%，拉动全部规模以上工业企业利润增长8.5个百分点。其中，与服务器有关的计算机整机制造、计算机外围设备制造行业利润均实现大幅增长。</p><p>原材料制造业利润在上半年也实现了快速增长。在铜、铝等有色金属产品需求向好等因素推动下，今年上半年，有色行业利润增长99.4%，拉动全部规模以上工业企业利润增长4.7个百分点。</p>
-
-<p><a href="https://tv.cctv.com/2026/07/27/VIDEef7JEnavvXRBbdUcMKOy260727.shtml">查看原文</a></p>
-<h3>【“十五五”开好局起好步】推动残疾人事业全面发展高质量发展</h3>
-<p><strong>央视网消息</strong>（新闻联播）：国务院新闻办公室今天（7月27日）举行“开局起步‘十五五’”系列主题新闻发布会。中国残联相关负责人介绍了“十五五”时期推进残疾人事业全面发展高质量发展有关情况。</p><p>“十五五”时期是基本实现社会主义现代化夯实基础、全面发力的关键时期，也是残疾人事业加快补上短板，推进全面发展、高质量发展的重要时期。发布会上，中国残联负责人介绍，《残疾人保障和发展“十五五”规划》提出了9项主要指标、7个方面32项重点任务、45项重点服务项目和专项行动。</p><p>“十五五”期间，我国将开展孤独症全生命周期关爱促进行动，持续深化无障碍环境共建共享，着力提升残疾人康复、教育、就业质量。同时，加快助残科技成果场景转化，不断完善残疾人社会保障和关爱服务体系，让残疾人民生保障更稳定、助残服务更有温度。</p>
-
-<p><a href="https://tv.cctv.com/2026/07/27/VIDEy0OWhdJUYvN8yVw8315b260727.shtml">查看原文</a></p>
-<hr>
-<p>(更新时间戳: 1785152731678)</p>
 ]]></content:encoded>
             <author>CCTV</author>
         </item>
