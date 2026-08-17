@@ -4,7 +4,7 @@
         <title>新闻联播文字稿</title>
         <link>https://github.com/ALLCAPS-Droid/xin-wen-lian-bo/</link>
         <description>每日新闻联播文字稿自动更新 RSS</description>
-        <lastBuildDate>Sun, 16 Aug 2026 11:50:33 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 17 Aug 2026 11:45:35 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-CN</language>
@@ -13,6 +13,41 @@
             <url>https://gh-proxy.org/https://raw.githubusercontent.com/ALLCAPS-Droid/xin-wen-lian-bo/refs/heads/master/logo.png</url>
             <link>https://github.com/ALLCAPS-Droid/xin-wen-lian-bo/</link>
         </image>
+        <item>
+            <title><![CDATA[2026年08月17日 新闻联播文字稿]]></title>
+            <link>https://github.com/ALLCAPS-Droid/xin-wen-lian-bo/blob/master/news/20260817.md</link>
+            <guid isPermaLink="false">20260817.md</guid>
+            <pubDate>Mon, 17 Aug 2026 13:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>《新闻联播》 (20260817)</h1>
+<h2>新闻摘要</h2>
+<p>本期节目主要内容：</p>
+<p>1.纪念江泽民同志诞辰100周年大会在京隆重举行 习近平发表重要讲话；</p>
+<p>2.习近平就印度尼西亚发生强烈地震向印尼总统致慰问电；</p>
+<p>3.应习近平邀请 约旦国王将对中国进行国事访问；</p>
+<p>4.李强主持召开国务院第十二次全体会议；</p>
+<p>5.江泽民生平和思想研讨会在京举行 蔡奇出席开幕式并讲话；</p>
+<p>6.1-7月份国民经济总体平稳 发展向新向优；</p>
+<p>7.国内联播快讯：</p>
+<p>（1）7月份一线城市商品住宅销售价格环比总体上涨；</p>
+<p>（2）八部门联合发文保障农业灌溉用水安全；</p>
+<p>（3）我国确定首批基层病种 患者住院实行“同病同付”；</p>
+<p>（4）嫦娥六号月壤研究为月球正反面差异提供新证据；</p>
+<p>（5）电视剧《藏锋》今晚总台央视综合频道开播；</p>
+<p>8.伊朗称美以在对伊战争中未实现任何目标 美媒称美海湾盟友对美沮丧情绪持续上升；</p>
+<p>9.俄称一天内击落超1400架无人机 乌袭击俄大型物流枢纽；</p>
+<p>10.国际联播快讯：</p>
+<p>（1）美总统要求大幅缩减美韩军演规模；</p>
+<p>（2）八国外长谴责以拒绝接受加沙和平计划；</p>
+<p>（3）刚果（金）埃博拉死亡病例数升至新高；</p>
+<p>（4）希腊首都附近岛屿燃起林火 蔓延迅速；</p>
+<p>（5）飓风在美夏威夷引发洪灾 大范围断电。
+（《新闻联播》 20260817 19:00）</p>
+<h2>详细新闻</h2>
+<hr>
+<p>(更新时间戳: 1786967134866)</p>
+]]></content:encoded>
+            <author>CCTV</author>
+        </item>
         <item>
             <title><![CDATA[2026年08月16日 新闻联播文字稿]]></title>
             <link>https://github.com/ALLCAPS-Droid/xin-wen-lian-bo/blob/master/news/20260816.md</link>
@@ -306,20 +341,6 @@
 <h2>详细新闻</h2>
 <hr>
 <p>(更新时间戳: 1785757532925)</p>
-]]></content:encoded>
-            <author>CCTV</author>
-        </item>
-        <item>
-            <title><![CDATA[2026年08月02日 新闻联播文字稿]]></title>
-            <link>https://github.com/ALLCAPS-Droid/xin-wen-lian-bo/blob/master/news/20260802.md</link>
-            <guid isPermaLink="false">20260802.md</guid>
-            <pubDate>Sun, 02 Aug 2026 13:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h1>《新闻联播》 (20260802)</h1>
-<h2>新闻摘要</h2>
-<p>本期节目主要内容。</p>
-<h2>详细新闻</h2>
-<hr>
-<p>(更新时间戳: 1785671133398)</p>
 ]]></content:encoded>
             <author>CCTV</author>
         </item>
