@@ -4,7 +4,7 @@
         <title>新闻联播文字稿</title>
         <link>https://github.com/ALLCAPS-Droid/xin-wen-lian-bo/</link>
         <description>每日新闻联播文字稿自动更新 RSS</description>
-        <lastBuildDate>Mon, 17 Aug 2026 11:45:35 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 18 Aug 2026 11:45:39 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-CN</language>
@@ -13,6 +13,20 @@
             <url>https://gh-proxy.org/https://raw.githubusercontent.com/ALLCAPS-Droid/xin-wen-lian-bo/refs/heads/master/logo.png</url>
             <link>https://github.com/ALLCAPS-Droid/xin-wen-lian-bo/</link>
         </image>
+        <item>
+            <title><![CDATA[2026年08月18日 新闻联播文字稿]]></title>
+            <link>https://github.com/ALLCAPS-Droid/xin-wen-lian-bo/blob/master/news/20260818.md</link>
+            <guid isPermaLink="false">20260818.md</guid>
+            <pubDate>Tue, 18 Aug 2026 13:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>《新闻联播》 (20260818)</h1>
+<h2>新闻摘要</h2>
+<p>央视网（<a href="http://www.cctv.com%EF%BC%89%E7%94%B1%E4%B8%AD%E5%A4%AE%E5%B9%BF%E6%92%AD%E7%94%B5%E8%A7%86%E6%80%BB%E5%8F%B0%E4%B8%BB%E5%8A%9E%EF%BC%8C%E6%98%AF%E4%BB%A5%E8%A7%86%E9%A2%91%E4%B8%BA%E7%89%B9%E8%89%B2%E7%9A%84%E4%B8%AD%E5%A4%AE%E9%87%8D%E7%82%B9%E6%96%B0%E9%97%BB%E7%BD%91%E7%AB%99%EF%BC%8C%E6%98%AF%E5%A4%AE%E8%A7%86%E7%9A%84%E8%9E%8D%E5%90%88%E4%BC%A0%E6%92%AD%E5%B9%B3%E5%8F%B0%EF%BC%8C%E6%98%AF%E6%8B%A5%E6%9C%89%E5%85%A8%E7%89%8C%E7%85%A7%E4%B8%9A%E5%8A%A1%E8%B5%84%E8%B4%A8%E7%9A%84%E5%A4%A7%E5%9E%8B%E4%BA%92%E8%81%94%E7%BD%91%E6%96%87%E5%8C%96%E4%BC%81%E4%B8%9A%E3%80%82%E7%A7%89%E6%89%BF%E2%80%9C%E8%9E%8D%E5%90%88%E5%88%9B%E6%96%B0%E3%80%81%E4%B8%80%E4%BD%93%E5%8F%91%E5%B1%95%E2%80%9D%E7%9A%84%E7%90%86%E5%BF%B5%EF%BC%8C%E4%BB%A5%E6%96%B0%E9%97%BB%E4%B8%BA%E9%BE%99%E5%A4%B4%EF%BC%8C%E4%BB%A5%E8%A7%86%E9%A2%91%E4%B8%BA%E9%87%8D%E7%82%B9%EF%BC%8C%E4%BB%A5%E7%94%A8%E6%88%B7%E4%B8%BA%E4%B8%AD%E5%BF%83%EF%BC%8C%E5%BB%BA%E6%88%90%E2%80%9C%E4%B8%80%E7%BD%91%E4%B8%80%E7%AB%AF%E5%A4%9A%E5%B9%B3%E5%8F%B0%E5%A4%9A%E6%B8%A0%E9%81%93%E2%80%9D%E8%9E%8D%E5%AA%92%E4%BD%93%E4%BC%A0%E6%92%AD%E4%BD%93%E7%B3%BB%E3%80%82">www.cctv.com）由中央广播电视总台主办，是以视频为特色的中央重点新闻网站，是央视的融合传播平台，是拥有全牌照业务资质的大型互联网文化企业。秉承“融合创新、一体发展”的理念，以新闻为龙头，以视频为重点，以用户为中心，建成“一网一端多平台多渠道”融媒体传播体系。</a></p>
+<h2>详细新闻</h2>
+<hr>
+<p>(更新时间戳: 1787053539026)</p>
+]]></content:encoded>
+            <author>CCTV</author>
+        </item>
         <item>
             <title><![CDATA[2026年08月17日 新闻联播文字稿]]></title>
             <link>https://github.com/ALLCAPS-Droid/xin-wen-lian-bo/blob/master/news/20260817.md</link>
@@ -327,20 +341,6 @@
 <p><a href="https://tv.cctv.com/2026/08/04/VIDECRWnfVai9nnoEq2coxqo260804.shtml">查看原文</a></p>
 <hr>
 <p>(更新时间戳: 1785843934546)</p>
-]]></content:encoded>
-            <author>CCTV</author>
-        </item>
-        <item>
-            <title><![CDATA[2026年08月03日 新闻联播文字稿]]></title>
-            <link>https://github.com/ALLCAPS-Droid/xin-wen-lian-bo/blob/master/news/20260803.md</link>
-            <guid isPermaLink="false">20260803.md</guid>
-            <pubDate>Mon, 03 Aug 2026 13:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h1>《新闻联播》 (20260803)</h1>
-<h2>新闻摘要</h2>
-<p>本期节目主要内容。</p>
-<h2>详细新闻</h2>
-<hr>
-<p>(更新时间戳: 1785757532925)</p>
 ]]></content:encoded>
             <author>CCTV</author>
         </item>
